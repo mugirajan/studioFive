@@ -284,7 +284,7 @@ body {
 }
 .transition {
   position: fixed;
-  top: 75%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #090909;
@@ -725,7 +725,7 @@ a {
 }
 .menu__abs {
   position: fixed !important;
-  top: 75%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateZ(0px);
   width: 100%;
@@ -2679,7 +2679,7 @@ a {
 }
 @media (min-width: 48em) {
   .contact-footer {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 4rem;
   }
@@ -3330,3 +3330,15 @@ a {
   position: absolute;
   left: 0;
 }/*# sourceMappingURL=style.css.map */
+
+/*footer icons*/
+.icons i{
+ font-size:15px;
+ color:White;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 0.5%;
+}
+/*footer icons*/
