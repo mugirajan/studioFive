@@ -24,7 +24,7 @@ export default function handleTransitionMenu() {
         active = false;
         chars.forEach((char) => {
           gsap.to(char, {
-            y: "0%",
+            x: "0%",
             opacity: 1,
           });
         });
@@ -56,7 +56,7 @@ export default function handleTransitionMenu() {
         chars.forEach((char, index) => {
           gsap.killTweensOf(char);
           gsap.to(char, 0.6, {
-            y: "0%",
+            x: "0%",
             delay: index * 0.05,
             ease: "Power1.easeOut",
           });
@@ -70,7 +70,7 @@ export default function handleTransitionMenu() {
         chars.forEach((char, index) => {
           gsap.killTweensOf(char);
           gsap.to(char, 0.6, {
-            y: "105%",
+            x: "105%",
             delay: index * 0.05,
             ease: "Power1.easeOut",
           });

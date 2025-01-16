@@ -277,9 +277,14 @@ body {
   src: url("/Fonts/Harmond/Harmond-Regular.eot");
   src: url("/Fonts/Harmond/Harmond-Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/Harmond/Harmond-Regular.woff2") format("woff2"), url("../Fonts/Harmond/Harmond-Regular.woff") format("woff"), url("/Fonts/Harmond/Harmond-Regular.ttf") format("truetype");
 }
+@media (max-width: 64rem) {
+  .transition {
+    display: none;
+  }
+}
 .transition {
   position: fixed;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #090909;
@@ -287,13 +292,9 @@ body {
   overflow: hidden;
   z-index: 999;
 }
-@media (max-width: 64rem) {
-  .transition {
-    display: none;
-  }
-}
+
 .transition.active {
-  height: 16.2037037037vh;
+  top: 50%;
 }
 .transition-item {
   opacity: 0;
@@ -724,7 +725,7 @@ a {
 }
 .menu__abs {
   position: fixed !important;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%) translateZ(0px);
   width: 100%;

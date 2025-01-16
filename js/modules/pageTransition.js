@@ -14,6 +14,7 @@ import handleSplitTextWorksDetail from "./handleSplitTextWorksDetail.js";
 export default function pageTransition() {
 
   function enterAnimation() {
+
     const transitionItem = document.querySelector(".transition-item.active");
     const transitionItemChars = transitionItem.querySelectorAll("span.char");
     const mainTransition = document.querySelector(".transition");
@@ -39,37 +40,28 @@ export default function pageTransition() {
         document.documentElement.classList.remove("hide-cursor");
       },
     });
-    gsap.set(mainTransition, { height: "100vh" });
+    gsap.set(mainTransition, { width: "0%" ,background: "transparent" });
+    gsap.set(transitionItemChars, { color: "transparent", y: "0%" });
     tlEnterAnimation
-      .to([transitionItemChars], 0, { y: "0%" })
-      .to(mainTransition, 0, { zIndex: 1000 })
+    .to([transitionItemChars], 0, { y: "0%" })
+    .to(mainTransition, 0, { zIndex: 1000, width: "100%", height: "100%",top:"50%",background: "transparent"}) 
+    // .to(mainTransition, { width: "0%", duration: 0.7, ease: Power1.easeInOut, background: "transparent" }) 
+    .to(mainTransition, { width: "100%", duration: 0.7, ease: Power1.easeInOut, delay: 0.2 ,background: "black" })
       .from(mainTransition, {
-        height: "16.203703703703702vh",
+        width: "100%",
       })
-      .to(
-        transitionItemChars,
-        { color: "#FFFFFF", stagger: { each: 0.04 } },
-        "-=1"
-      )
-      .to(
-        transitionItemChars,
-        { color: "#282828", stagger: { each: -0.03 } },
-        "label-=0.5"
-      )
-      .to(transitionItemChars, { opacity: 0 }, "<=20%")
-      .to(".transition-item", { y: "-100%", ease: Power1.easeInOut }, "label")
-      .to(
-        mainTransition,
-        {
-          top: "-60%",
-        },
-        "label"
-      )
+      .to(transitionItemChars, { color: "#FFFFFF", stagger: { each: 0.04 } }, "-=1")
+
+      .to(transitionItemChars, { color: "transparent", stagger: { each: -0.03 } }, "label-=0.5")
+    
+      .to(transitionItemChars, { color: "transparent", opacity: 0 }, "<=20%")
+      .to(transitionItemChars, { y: "-10%", ease: Power1.easeInOut }, "label")
+      .to(mainTransition, { width: "100%", duration: 1, delay: 0.2 , ease: Power1.easeInOut,  background: "transparent"  }) 
+     
       .set(
         [
           mainTransition,
           transitionItem,
-          ".transition-item",
           transitionItemChars,
         ],
         {
@@ -77,6 +69,8 @@ export default function pageTransition() {
         }
       );
   }
+
+
   const delay = (n) => {
     n = n || 2000;
     return new Promise((done) => {
