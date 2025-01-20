@@ -8,7 +8,7 @@ const handlePreloader = () => {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/Images/Animate/HomeLoop.json",
+    path: "/Images/new/Main-Scene.svg",
   });
 
   let renderDrop = bodymovin.loadAnimation({
@@ -16,14 +16,14 @@ const handlePreloader = () => {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/Images/Animate/HomeDrop.json",
+    path: "/Images/new/Main-Scene.svg",
   });
   let renderHome = bodymovin.loadAnimation({
     container: lottieHome,
     renderer: "svg",
     loop: true,
     autoplay: false,
-    path: "/Images/Animate/HomeLoop.json",
+    path: "/Images/new/Main-Scene.svg",
   });
 
   gsap.set(["#lottie-drop", "#lottie-home", "#lottie-loader"], { opacity: 0 });

@@ -9,21 +9,21 @@ const handleLoadLottie = () => {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: "/Images/Animate/1.json",
+    path: "/Images/new/Main-Scene.svg",
   });
   let renderContact = bodymovin.loadAnimation({
     container: lottieContact,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: "/Images/Animate/2.json"
+    path: "/Images/new/Main-Scene.svg",
   });
   let renderEmailBlack = bodymovin.loadAnimation({
     container: lottieEmailBlack,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: "/Images/Animate/3.json"
+    path: "/Images/new/Main-Scene.svg",
   });
 }
 
