@@ -46,7 +46,7 @@ const handlePreloader = () => {
       const preloaderTl = gsap.timeline({
         defaults: { duration: 1.2, ease: Expo.easeInOut },
         onUpdate: () => {
-          count.innerHTML = `<span> mugilavathi.. </span>`;
+          count.innerHTML = `<span> Loading.. </span>`;
         },
         onComplete: () => {
           gsap.to(".loader", { zIndex: 999 });
