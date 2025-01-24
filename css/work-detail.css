@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.sigle-work {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.single-work-left {
+    min-height: 30vh;
+    /* background-color: #000; */
+    min-width: 30%;
+    box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    position: sticky;
+    top: 0;
+}
+
+.single-work-left h1 {
+    color: rgb(0, 0, 0);
+}
+
+.single-work-right {
+    /* width: 70%; */
+    min-height: 80vh;
+}
+
+.sigle-work-banner {
+    min-height: 80vh;
+    background-image: url("https://thearchitectsdiary.com/wp-content/uploads/2023/02/Arch2O-architectural-sketching-10-architecture-sketching-tips-1-1024x585.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.single-work-second {
+    padding: 20px;
+}
+
+
+.single-work-second p {
+    font-size: 2rem;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.single-work-first p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+ 
+.mfp-with-zoom .mfp-title,
+.touch .gallery-image figcaption,
+html:not(.touch) .gallery-image figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0);
+    padding: 1em;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    max-width: calc(100% - 9em);
+    line-height: 1.25;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mfp-with-zoom .mfp-title:before,
+.touch .gallery-image figcaption:before,
+html:not(.touch) .gallery-image figcaption:before,
+.mfp-with-zoom .mfp-title:after,
+.touch .gallery-image figcaption:after,
+html:not(.touch) .gallery-image figcaption:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+.mfp-with-zoom .mfp-title:before,
+.touch .gallery-image figcaption:before,
+html:not(.touch) .gallery-image figcaption:before,
+.mfp-with-zoom .mfp-title:after,
+.touch .gallery-image figcaption:after,
+html:not(.touch) .gallery-image figcaption:after {
+    right: 100%;
+    bottom: 100%;
+}
+
+.mfp-with-zoom .mfp-title:after,
+.touch .gallery-image figcaption:after,
+html:not(.touch) .gallery-image figcaption:after {
+    left: 100%;
+    top: 100%;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-title,
+.touch .gallery-image figcaption,
+html:not(.touch) .gallery-image:hover figcaption {
+    color: white;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0.3s;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-title:before,
+.touch .gallery-image figcaption:before,
+html:not(.touch) .gallery-image:hover figcaption:before,
+.mfp-with-zoom.mfp-ready .mfp-title:after,
+.touch .gallery-image figcaption:after,
+html:not(.touch) .gallery-image:hover figcaption:after {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-title:before,
+.touch .gallery-image figcaption:before,
+html:not(.touch) .gallery-image:hover figcaption:before {
+    right: -1.5em;
+    bottom: -1.5em;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-title:after,
+.touch .gallery-image figcaption:after,
+html:not(.touch) .gallery-image:hover figcaption:after {
+    left: -1.5em;
+    top: -1.5em;
+}
+
+
+
+
+.gallery {
+    -moz-column-gap: 0;
+    column-gap: 0;
+    margin: 20px;
+}
+
+@media (min-width: 480px) {
+    .gallery {
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1260px) {
+    .gallery {
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+.gallery-image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-image:before,
+.gallery-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 16px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    will-change: border;
+}
+
+.gallery-image:after {
+    border-width: 0;
+}
+
+.gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+html:not(.touch) .gallery-image {
+    overflow: hidden;
+}
+
+html:not(.touch) .gallery-image:hover:before {
+    border-width: 16px;
+}
+
+html:not(.touch) .gallery-image:hover:after {
+    border-width: 32px;
+}
+
+.touch .gallery-image figcaption {
+    top: auto;
+    bottom: 2em;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-bg {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.mfp-with-zoom img.mfp-img {
+    padding: 0;
+}
+
+.mfp-with-zoom .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+}
+
+.mfp-with-zoom .mfp-container {
+    padding: 0;
+}
+
+.mfp-with-zoom .mfp-content {
+    overflow: hidden;
+}
+
+.mfp-with-zoom .mfp-bottom-bar {
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.mfp-with-zoom .mfp-title {
+    top: auto;
+    bottom: 2em;
+}
+
+.mfp-arrow {
+    opacity: 1;
+    margin-top: 0 !important;
+    width: 20%;
+    height: 30%;
+    transform: translateY(-50%);
+}
+
+.mfp-arrow:before,
+.mfp-arrow:after {
+    margin: 0;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(-45deg) translate(-50%, -100%);
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transition: all 0.15s;
+}
+
+.mfp-arrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.mfp-arrow-left {
+    left: 0;
+}
+
+.mfp-arrow-left:before,
+.mfp-arrow-left:after {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.mfp-arrow-left:after {
+    margin-left: 2rem;
+}
+
+.mfp-arrow-left:hover:before,
+.mfp-arrow-left:active:before {
+    margin-left: 2rem;
+}
+
+.mfp-arrow-left:hover:after,
+.mfp-arrow-left:active:after {
+    margin-left: 0;
+}
+
+.mfp-arrow-right {
+    right: 0;
+}
+
+.mfp-arrow-right:before,
+.mfp-arrow-right:after {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.mfp-arrow-right:after {
+    margin-left: 2rem;
+}
+
+.mfp-arrow-right:hover:before {
+    margin-left: 2rem;
+}
+
+.mfp-arrow-right:hover:after {
+    margin-left: 0;
+}
+
+button.mfp-close {
+    opacity: 1;
+    margin-top: 0 !important;
+    width: 20%;
+    height: 30%;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+}
+
+button.mfp-close:before,
+button.mfp-close:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    transition: all 0.15s;
+    transform-origin: 0 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+button.mfp-close:before {
+    transform: rotate(-45deg);
+}
+
+button.mfp-close:after {
+    transform: rotate(135deg);
+}
+
+button.mfp-close:hover:before {
+    transform: rotate(135deg);
+}
+
+button.mfp-close:hover:after {
+    transform: rotate(315deg);
+}
+
+button.mfp-close:active {
+    transform: scale(0.95);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+} 
+
+
+
+@media (max-width: 768px) {
+    .single-work-second p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+    .single-work-first p {
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    .project-title.project-two-line{
+        font-family: Roxborough CF;
+    }
+}
+
+@media (max-width: 480px) {
+    .single-work-second p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+    .single-work-first p {
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
+
+
+
+.small {
+    font-size: 11px;
+    color: #999;
+    display: block;
+    margin-top: -10px
+}
+
+.cont {
+    text-align: center;
+}
+
+.page-head {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-head .lead {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.btn {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn-lg {
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 1.33333;
+    padding: 10px 16px;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #152836;
+}
+
+.btn-primary {
+    background-color: #152836;
+    border-color: #0e1a24;
+    color: #ffffff;
+}
+
+.btn-primary {
+    border-color: #eeeeee;
+    color: #eeeeee;
+    transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+}
+
+.page-head h1 {
+    font-size: 42px;
+    margin: 0 0 20px;
+    color: #FFF;
+    position: relative;
+    display: inline-block;
+}
+
+.page-head h1 .version {
+    bottom: 0;
+    color: #ddd;
+    font-size: 11px;
+    font-style: italic;
+    position: absolute;
+    width: 58px;
+    right: -58px;
+}
+
+.demo-gallery>ul {
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.demo-gallery>ul>li {
+    margin-bottom: 15px;
+    width: 400px;
+    display: inline-block;
+    margin-right: 15px;
+    list-style: outside none none;
+}
+
+.demo-gallery>ul>li a {
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.demo-gallery>ul>li a>img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+
+.demo-gallery>ul>li a:hover>img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery>ul>li a:hover .demo-gallery-poster>img {
+    opacity: 1;
+}
+
+.demo-gallery>ul>li a .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery>ul>li a .demo-gallery-poster>img {
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery>ul>li a:hover .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .justified-gallery>a>img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+
+.demo-gallery .justified-gallery>a:hover>img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery .justified-gallery>a:hover .demo-gallery-poster>img {
+    opacity: 1;
+}
+
+.demo-gallery .justified-gallery>a .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery .justified-gallery>a .demo-gallery-poster>img {
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery .justified-gallery>a:hover .demo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .video .demo-gallery-poster img {
+    height: 48px;
+    margin-left: -24px;
+    margin-top: -24px;
+    opacity: 0.8;
+    width: 48px;
+}
+
+.demo-gallery.dark>ul>li a {
+    border: 3px solid #04070a;
+}
