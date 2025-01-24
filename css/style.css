@@ -2512,11 +2512,11 @@ a {
 }
 .playground-icon {
   display: block;
-  padding-top: 10.6rem;
+  padding-top: 4rem;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  padding-bottom: 10.6rem;
+  padding-bottom: 4rem;
 }
 @media (min-width: 1025px) {
   .playground-icon {
@@ -2571,7 +2571,7 @@ a {
 }
 @media (min-width: 1025px) {
   .playground-mask {
-    visibility: visible;
+   
     opacity: 1;
   }
 }
@@ -3342,3 +3342,17 @@ a {
   gap: 0.5%;
 }
 /*footer icons*/
+/* header icon */
+.logo-02{
+  display: flex;
+  justify-content: center;
+}
+.logo-02 img{
+  width: 7%;
+}
+@media(max-width:480px){
+  .logo-02 img{
+    width: 30%;
+  }
+}
+/* header icon */
