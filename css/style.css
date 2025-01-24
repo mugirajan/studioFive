@@ -2622,7 +2622,7 @@ a {
   line-height: 120%;
   font-weight: 500;
   letter-spacing: -0.01em;
-  text-align: right;
+  text-align: left;
 }
 @media (max-width: 64rem) {
   .playground-info__name {
