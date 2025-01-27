@@ -230,18 +230,18 @@ body {
     padding-bottom: 4rem;
   }
 }
-
+/* 
 .container {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
-}
-@media (min-width: 1025px) {
+} */
+/* @media (min-width: 1025px) {
   .container {
     padding: 0 2vw;
   }
-}
+} */
 
 @font-face {
   font-family: "Roobert";
@@ -1635,7 +1635,7 @@ a {
   }
 }
 .about-full {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 .about-full > * {
@@ -1862,11 +1862,11 @@ a {
 }
 @media (max-width: 39.9375rem) {
   .hobby {
-    height: 50vh;
+    height: 100vh;
   }
 }
 .hobby .container {
-  height: 50%;
+  height: 100vh;
 }
 .hobby-flex {
   display: flex;
@@ -1880,7 +1880,7 @@ a {
   }
 }
 .hobby-list {
-  width: 41.6666666667%;
+  width: 50%;
   position: relative;
   padding: 4.6296296296vh 0 0 0;
   height: -moz-fit-content;
@@ -1906,7 +1906,7 @@ a {
 }
 @media (max-width: 39.9375rem) {
   .hobby-list::after {
-    left: 0;
+    left: 10px;
   }
 }
 @media (max-width: 64rem) {
@@ -1922,7 +1922,7 @@ a {
   }
 }
 .hobby-image {
-  width: 100%;
+  width: 50%;
   height: 100vh;
   
   overflow: hidden;
@@ -1984,6 +1984,7 @@ a {
 @media (max-width: 64rem) {
   .hobby-content {
     padding-bottom: 0.25rem;
+    padding-left: 10px;
   }
 }
 @media (max-width: 39.9375rem) {
