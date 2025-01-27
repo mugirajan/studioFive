@@ -123,9 +123,10 @@
 }
 @media (min-width: 1025px) {
   .dot {
-    width: 1.25vw;
+    width: 0vw;
     height: 1.25vw;
-    top: 3%;
+    top: 5%;
+    left: -3%;
   }
 }
 
@@ -238,7 +239,7 @@ body {
 }
 @media (min-width: 1025px) {
   .container {
-    padding: 0 2.083vw;
+    padding: 0 2vw;
   }
 }
 
@@ -1464,6 +1465,7 @@ a {
 }
 .about .container {
   height: 100%;
+  margin-top: 3em;
 }
 @media (min-width: 48em) {
   .about {
@@ -1536,7 +1538,7 @@ a {
 .about-hobby {
   color: #e1e1e1;
   position: absolute;
-  font-size: 2.4rem;
+  font-size: 2rem;
   right: 0;
   bottom: 0;
   width: 66.6666666667%;
@@ -1595,9 +1597,8 @@ a {
   }
 }
 .about-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: -0.04em;
-  text-indent: 2.5em;
   position: relative;
   color: #e1e1e1;
   width: 65%;
@@ -1612,7 +1613,6 @@ a {
 @media (min-width: 1025px) {
   .about-title {
     font-size: 3.5vw;
-    text-indent: 4em;
     width: 55%;
     line-height: 0;
   }
@@ -1635,14 +1635,14 @@ a {
   }
 }
 .about-full {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 .about-full > * {
   height: 100%;
 }
 .about-full__inner {
-  height: 100vh;
+  height: 80vh;
 }
 .about-full__inner > img {
   width: 100%;
@@ -1862,11 +1862,11 @@ a {
 }
 @media (max-width: 39.9375rem) {
   .hobby {
-    height: 100vh;
+    height: 50vh;
   }
 }
 .hobby .container {
-  height: 100%;
+  height: 50%;
 }
 .hobby-flex {
   display: flex;
@@ -1876,7 +1876,7 @@ a {
 @media (min-width: 48em) {
   .hobby-flex {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .hobby-list {
@@ -1889,8 +1889,8 @@ a {
 .hobby-list::after {
   position: absolute;
   content: "";
-  top: 4.6296296296vh;
-  right: 20%;
+  top: 4vh;
+  left: 5%;
   width: 1.25vw;
   height: 1.25vw;
   border-radius: 100%;
@@ -1918,13 +1918,13 @@ a {
   .hobby-list {
     width: 100%;
     order: 1;
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
   }
 }
 .hobby-image {
-  width: 60%;
+  width: 100%;
   height: 100vh;
-  position: relative;
+  
   overflow: hidden;
   font-size: 0;
   z-index: 3;
@@ -1969,6 +1969,7 @@ a {
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
+  padding-left: 80px;
   text-align: right;
   font-size: 2.4rem;
   line-height: 110%;
@@ -3352,6 +3353,7 @@ a {
   width: 7%;
 }
 @media(max-width:480px){
+  
   .logo-02 img{
     width: 30%;
   }
@@ -3367,5 +3369,12 @@ a {
   position: relative;
   overflow: hidden;
 }
+.award-image{
+  width: 100%;
+  height: 50%;
+}
+
+/* Base styles */
+
 
 /* End Of About  */
