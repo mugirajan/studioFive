@@ -61,3 +61,5 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener('load', lazySizes.init);
+
+
