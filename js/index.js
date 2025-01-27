@@ -35,8 +35,10 @@ export const initJsGlobal = () => {
   handleAnimateContact();
   handleAnimatePlayground();
   handleAnimateWorksDetail();
+  initScrollAnimations();
+  handleHobbyInteractions();
+  handleHobbyInteractions(); // Add this line
 };
-
 export const initJsModule = () => {
 
   handleTransitionMenu();
