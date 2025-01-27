@@ -508,7 +508,7 @@ header {
   .nav-main {
     width: -moz-fit-content;
     width: fit-content;
-    margin-right: 14.1666666667%;
+    /* margin-right: 14.1666666667%; */
   }
 }
 .nav-version {
@@ -1866,7 +1866,7 @@ a {
     height: 100vh;
   }
 }
-.hobby .container {
+.hobby .containers {
   height: 100vh;
 }
 .hobby-flex {
@@ -3490,4 +3490,12 @@ a {
   .testimonial-section .content p {
     font-size: 22px;
     line-height: 32px;
+  }
+
+
+  @media (max-width:430px) {
+    .testimonial-section .row {
+      flex-direction: column-reverse;
+    }
+    
   }
