@@ -657,9 +657,8 @@ a {
 }
 .menu__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  mix-blend-mode: exclusion;
 }
 .menu__item.is-animating {
   pointer-events: none;
